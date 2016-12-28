@@ -13,6 +13,7 @@
         <module>dao</module>
         <module>model</module>
         <module>service</module>
+        <module>utility</module>
     </modules>
 
     <properties>
@@ -25,6 +26,7 @@
     </properties>
 
     <dependencies>
+        <!--日志包-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

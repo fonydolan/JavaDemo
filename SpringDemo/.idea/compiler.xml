@@ -9,6 +9,7 @@
         <module name="dao" />
         <module name="model" />
         <module name="service" />
+        <module name="utility" />
         <module name="web" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="service" target="1.7" />
       <module name="SpringDemo" target="1.7" />
       <module name="study" target="1.7" />
+      <module name="utility" target="1.7" />
       <module name="web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
