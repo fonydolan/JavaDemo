@@ -38,7 +38,12 @@
     <bean id="defaultViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <property name="prefix" value="/WEB-INF/views/"/><!--设置JSP文件的目录位置-->
+        <property name="order" value="1"/>
         <property name="suffix" value=".jsp"/>
+    </bean>
+    <bean class="org.springframework.web.servlet.view.XmlViewResolver">
+        <property name="location" value="/WEB-INF/views/views.xml"/>
+        <property name="order" value="1"/>
     </bean>
 
     <!-- springmvc文件上传需要配置的节点-->

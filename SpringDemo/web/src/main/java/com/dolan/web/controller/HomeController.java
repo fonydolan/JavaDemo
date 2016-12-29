@@ -19,7 +19,7 @@ public class HomeController {
     public  String index()
     {
         logger.info("the home/index page");
-        return "index";
+        return "fwefwe";
     }
 
 }

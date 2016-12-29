@@ -17,12 +17,12 @@
     </modules>
 
     <properties>
-        <jdk.version>1.7</jdk.version>
-        <spring.version>4.1.1.RELEASE</spring.version>
+        <jdk.version>1.8</jdk.version>
+        <spring.version>4.3.1.RELEASE</spring.version>
         <jstl.version>1.2</jstl.version>
         <junit.version>3.8.1</junit.version>
         <logback.version>1.0.13</logback.version>
-        <jcl-over-slf4j.version>1.7.5</jcl-over-slf4j.version>
+        <jcl-over-slf4j.version>1.7.21</jcl-over-slf4j.version>
     </properties>
 
     <dependencies>
@@ -32,6 +32,19 @@
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
         </dependency>
 
     </dependencies>
