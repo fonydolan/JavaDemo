@@ -11,6 +11,6 @@
     <title>index</title>
 </head>
 <body>
-    hello jsp
+    hello jsp test home/index
 </body>
 </html>

@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 
 /**
@@ -16,10 +17,10 @@ public class HomeController {
     private static  final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
     @RequestMapping("/index")
-    public  String index()
+    public  ModelAndView index()
     {
-        logger.info("the home/index page");
-        return "fwefwe";
+        logger.info("the Home/index page");
+        return new ModelAndView("Home/index");
     }
 
 }
