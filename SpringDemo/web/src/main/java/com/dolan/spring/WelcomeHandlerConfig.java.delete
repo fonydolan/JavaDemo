@@ -1,0 +1,55 @@
+package com.dolan.spring;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Conditional;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.test.context.ActiveProfiles;
+
+import com.dolan.spring.config.QuestExistCondition;
+
+@Configuration
+@ActiveProfiles("dev")  
+@Conditional(QuestExistCondition.class)//通过条件判断 加载
+//，@Configuration注解表明这个类是一个配置类，该类应该包
+//含在Spring应用上下文中如何创建bean的细节。
+public class WelcomeHandlerConfig {
+
+	//手动配置bean
+	@Bean(name="dogQuest")//name重命名
+	//@Bean注解会告诉Spring这个方法将会返回一个对象，该对象要注册
+	//为Spring应用上下文中的bean。
+	public Quest dogQuest(){
+		return new DogQuest();
+	}
+
+	//手动配置bean
+	@Bean
+	public WelcomeHandler welcomeHandler(){
+		return new WelcomeHandler(dogQuest());
+	}
+
+	//手动配置bean
+	@Bean //spring装配 传入Quest
+	public WelcomeHandler welcomeHandler(Quest questParam){
+		return new WelcomeHandler(questParam);
+	}
+	
+}
+
+//@Profile spring 3.1类级别 spring 3.2方法级别
+//@Conditional spring 4引入
+
+//@Configuration
+//@ComponentScan  //自动装配
+//@ComponentScan(basePackages={"com.dolan.spring","com.dolan.spring.config"})  //配置包作为基础包
+//@ComponentScan(basePackageClasses={Quest.class,config.Welcome.class})  //类所在包作为基础包
+//这个注解能够在Spring中启用组件扫描。 
+//Spring将会扫描这个包以及这个包下的所有子包，查找带
+//有@Component注解的类。为其创建bean
+//public class WelcomeHandlerConfig {}
+
+//@EnableAspectJAutoProxy  AOP
+
+//依赖关系自动装配  通过bean注解@Autowired实现,自动为标记的依赖类添加实例
+
