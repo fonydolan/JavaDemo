@@ -15,13 +15,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App 
 {
 	static final String XML_TODATABASE_CONFIG="spring-batch-context.xml";
-	static final String DATABASE_TOXML_CONFIG="spring-batch-context-dbtoxml.xml";
 	
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
         ApplicationContext context;
-        context = new ClassPathXmlApplicationContext(DATABASE_TOXML_CONFIG);
+        context = new ClassPathXmlApplicationContext(XML_TODATABASE_CONFIG);
         JobLauncher jobLauncher = (JobLauncher)context.getBean("jobLauncher");
         Job job = (Job)context.getBean("examResultJob");
         try
@@ -34,4 +33,5 @@ public class App
         	e.printStackTrace();
         }
     }
+    
 }
