@@ -3,15 +3,18 @@ package com.dolan.spring4.configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.MediaType;
 import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;  
 
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages="com.dolan.spring4")
-public class WebConfig {// extends WebMvcConfigurerAdapter 
+public class WebConfig extends WebMvcConfigurerAdapter  {// extends WebMvcConfigurerAdapter 
 	
 	@Bean
 	public ViewResolver viewResolver(){
@@ -32,5 +35,5 @@ public class WebConfig {// extends WebMvcConfigurerAdapter
 	这样配置的话，DispatcherServlet会映射为应用的默认
 	Servlet，所以它会处理所有的请求，包括对静态资源的请求，如图片和样式表（在大多数情况下，这可能并不是你想要的效果）。
 	*/
-
+	
 }

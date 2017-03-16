@@ -1,0 +1,33 @@
+
+Mysql修改密码：
+方法1：用SET PASSWORD命令，具体更新密码步骤如下：
+c:>mysql -u root
+mysql>set password for 'root'@'localhost'=password('newpasswd');
+mysql>set password for 'root'@'%'=password('newpasswd'); //本条可选
+方法2：用mysqladmin
+mysqladmin -u用户名 -p旧密码 password 新密码
+mysqladmin -u root password "newpass" 注：因为开始时root没有密码，所以-p旧密码一项就可以省略了。
+如果root已经设置过密码，采用如下方法
+mysqladmin -u root password oldpass "newpass"
+方法3： 用UPDATE直接编辑user表
+mysql> use mysql;
+mysql> UPDATE user SET Password = PASSWORD('newpass') WHERE user = 'root';
+mysql> FLUSH PRIVILEGES;
+在丢失root密码的时候，可以这样
+mysqld_safe --skip-grant-tables&
+mysql -u root mysql
+mysql> UPDATE user SET password=PASSWORD("new password") WHERE user='root';
+mysql> FLUSH PRIVILEGES;
+
+
+增加新用户:
+grant select on 数据库.* to 用户名@登录主机 identified by “密码”
+1、增加一个用户test1密码为abc，让他可以在任何主机上登录，并对所有数据库有查询、插入、修改、删除的权限。首先用root用户连入MYSQL，然后键入以下命令：
+    grant select,insert,update,delete on *.* to [email=test1@”%]test1@”%[/email]” Identified by “abc”;
+但增加的用户是十分危险的，你想如某个人知道test1的密码，那么他就可以在internet上的任何一台电脑上登录你的mysql数据库并对你的数据可以为所欲为了，解决办法见2。
+
+2、增加一个用户test2密码为abc,让他只可以在localhost上登录，并可以对数据库mydb进行查询、插入、修改、删除的操作（localhost指本地主机，即MYSQL数据库所在的那台主机），这样用户即使用知道test2的密码，他也无法从internet上直接访问数据库，只能通过MYSQL主机上的web页来访问了。
+    grant select,insert,update,delete on mydb.* to [email=test2@localhost]test2@localhost[/email] identified by “abc”;
+如果你不想test2有密码，可以再打一个命令将密码消掉。
+    grant select,insert,update,delete on mydb.* to [email=test2@localhost]test2@localhost[/email] identified by “”;
+

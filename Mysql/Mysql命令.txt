@@ -1,0 +1,60 @@
+一、连接MYSQL。 
+格式： mysql -h主机地址 -u用户名 －p用户密码 
+1、例1：连接到本机上的MYSQL。 
+首先在打开DOS窗口，然后进入目录 mysqlbin，再键入命令mysql -uroot -p，回车后提示你输密码，如果刚安装好MYSQL，超级用户root是没有密码的，故直接回车即可进入到MYSQL中了，MYSQL的提示符是：mysql＞ 
+2、例2：连接到远程主机上的MYSQL。假设远程主机的IP为：110 
+.110.110.110，用户名为root,密码为abcd123。则键入以下命令： 
+mysql -h110.110.110.110 -uroot -pabcd123 
+（注:u与root可以不用加空格，其它也一样） 
+3、退出MYSQL命令： exit （回车）
+
+二、显示命令 
+1、显示数据库列表。 
+show databases; 
+刚开始时才两个数据库：mysql和test。mysql库很重要它里面有MYSQL的系统信息，我们改密码和新增用户，实际上就是用这个库进行操作。
+2、显示库中的数据表： 
+use mysql； ／／打开库，学过FOXBASE的一定不会陌生吧 
+show tables; 
+3、显示数据表的结构： 
+describe 表名; 
+4、建库： 
+create database 库名; 
+5、建表： 
+use 库名； 
+create table 表名 (字段设定列表)； 
+6、删库和删表: 
+drop database 库名; 
+drop table 表名； 
+7、将表中记录清空： 
+delete from 表名; 
+8、显示表中的记录： 
+select * from 表名;
+
+三、一个建库和建表以及插入数据的实例 
+drop database if exists school; //如果存在SCHOOL则删除 
+create database school; //建立库SCHOOL 
+use school; //打开库SCHOOL 
+//建立表TEACHER 
+create table teacher 
+( 
+id int(3) auto_increment not null primary key, 
+name char(10) not null, 
+address varchar(50) default '', 
+year date 
+); //建表结束 
+//以下为插入字段 
+insert into teacher values('','glchengang','深圳一中','1976-10-10'); 
+insert into teacher values('','jack',@'深圳一中','1975-12-23');
+
+四、将文本数据转到数据库中 
+1、文本数据应符合的格式：字段数据之间用tab键隔开，null值用\n来代替. 
+例： 
+3 rose 深圳二中 1976-10-10 
+4 mike 深圳一中 1975-12-23 
+2、数据传入命令 load data local infile "文件名" into table 表名 character set utf8; 
+注意：你最好将文件复制到\mysql\bin目录下，并且要先用use命令打表所在的库 。
+mysql> load data local infile "D:/datadb.txt" into table teacher;#+ character set gb2312 带中文
+
+五、备份数据库：（命令在DOS的\mysql\bin目录下执行） 
+mysqldump --opt school>school.bbb 
+注释:将数据库school备份到school.bbb文件，school.bbb是一个文本文件，文件名任取，打开看看你会有新发现。

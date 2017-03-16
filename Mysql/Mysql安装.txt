@@ -1,0 +1,7 @@
+config file:
+mysql.ini
+
+CMD mysqld --console #安装mysql
+Problem1: mysql.ini配置中table_cache不可识别？ Mysql Version5.1 table_Open_cache
+Problem2: mysql.user不存在？执行下面命令初始化用户（user.frm,user.MYD,） mysqld --initialize-insecure --user=mysql
+
