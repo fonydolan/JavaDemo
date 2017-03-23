@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.dolan.springmvc.model.Student;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/Student")
 public class StudentController {
 	
 	@RequestMapping(method=RequestMethod.GET)
