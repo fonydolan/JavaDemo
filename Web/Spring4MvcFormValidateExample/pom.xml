@@ -67,6 +67,17 @@
             <version>1.2</version>
         </dependency>
   </dependencies>
+  <repositories>  
+	  <repository>  
+	    <id>central</id>  
+	    <name>Central Repository</name>  
+	    <url>http://maven.aliyun.com/nexus/content/groups/public</url>  
+	    <layout>default</layout>  
+	    <snapshots>  
+	      <enabled>false</enabled>  
+	    </snapshots>  
+	  </repository>  
+ </repositories> 
   <build>
   	<pluginManagement>
             <plugins>
@@ -78,6 +89,11 @@
                         <source>1.8</source>
                         <target>1.8</target>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>3.0.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

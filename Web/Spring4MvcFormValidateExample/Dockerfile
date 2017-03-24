@@ -1,6 +1,8 @@
-FROM dolan/base-tomcat-maven:latest
+FROM dolan/tomcat8-maven3-ali:latest
 
 ADD pom.xml /tmp/build/
+
+RUN set -x
 RUN cd /tmp/build && mvn -q dependency:resolve
 
 ADD src /tmp/build/src

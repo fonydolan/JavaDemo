@@ -1,4 +1,4 @@
-FROM dolan/base-tomcat-maven:latest
+FROM dolan/tomcat8-maven3-ali:latest
 
 ADD pom.xml /tmp/build/
 RUN cd /tmp/build && mvn -q dependency:resolve
