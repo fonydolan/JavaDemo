@@ -1,4 +1,4 @@
-FROM dolan/tomcat8-maven3-ali:latest
+FROM daocloud.io/dolan/tomcat8-maven3-ali:latest
 
 ADD pom.xml /tmp/build/
 

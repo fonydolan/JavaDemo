@@ -14,13 +14,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.dolan.springboot.model.Visitor;
 import com.dolan.springboot.repository.VisitRepository;
 
-@Controller
-@RequestMapping("/")
+@SpringBootApplication
 public class HelloController {
 	
 	@Resource
 	VisitRepository visitRepository;
 	  
+	public static void main(String[] args) {
+        SpringApplication.run(HelloController.class, args);
+    }
+	
     @RequestMapping("")
 	public String hello(HttpServletRequest request){
     	Visitor visitor = new Visitor();
