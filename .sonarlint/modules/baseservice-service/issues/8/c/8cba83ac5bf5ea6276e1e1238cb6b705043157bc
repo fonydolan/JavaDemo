@@ -1,0 +1,32 @@
+
+csquid:S1066è"/Merge this if statement with the enclosing one.(ãÈ·Ü¸ˇˇˇˇHï÷
+RMAJORZ
+CODE_SMELL
+ásquid:S2293T"YReplace the type specification in this constructor call with the diamond operator ("<>").(†≠Å≤Hñ÷
+RMINORZ
+CODE_SMELL
+åsquid:S2293_"YReplace the type specification in this constructor call with the diamond operator ("<>").(≈© À˙ˇˇˇˇHó÷
+RMINORZ
+CODE_SMELL
+àsquid:S37761"RRefactor this method to reduce its Cognitive Complexity from 62 to the 15 allowed.(®∑Ö˝ˇˇˇˇHò÷
+RCRITICALZ
+CODE_SMELL
+Tsquid:S1170#"!Make this final field static too.(Ωí˘»˝ˇˇˇˇHô÷
+RMINORZ
+CODE_SMELL
+osquid:S1854f"CRemove this useless assignment to local variable "pValueEntityAdd".(Âà€º˙ˇˇˇˇHö÷
+RMAJORZBUG
+fsquid:S1854m":Remove this useless assignment to local variable "pValue".(ıÙ·—˛ˇˇˇˇHõ÷
+RMAJORZBUG
+qsquid:S1155U">Use isEmpty() to check whether the collection is empty or not.(˝∂€‰¯ˇˇˇˇHú÷
+RMINORZ
+CODE_SMELL
+lsquid:S1155b">Use isEmpty() to check whether the collection is empty or not.(¨ªûŒHù÷
+RMINORZ
+CODE_SMELL
+rsquid:S1155è">Use isEmpty() to check whether the collection is empty or not.(ãÈ·Ü¸ˇˇˇˇHû÷
+RMINORZ
+CODE_SMELL
+msquid:S1155≠">Use isEmpty() to check whether the collection is empty or not.(¡πßHü÷
+RMINORZ
+CODE_SMELL

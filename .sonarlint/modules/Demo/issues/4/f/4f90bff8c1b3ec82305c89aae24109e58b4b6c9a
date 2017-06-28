@@ -1,0 +1,19 @@
+
+_squid:S1481 "*Remove this unused "input" local variable.(¬…ˆ8âøĞÍ+HõÕ
+RMINORZ
+CODE_SMELL
+fsquid:S1068",Remove this unused "jaOutput" private field.(Ê«ÄÍûÿÿÿÿ8¼»ÎÍ+HöÕ
+RMAJORZ
+CODE_SMELL
+ksquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8®—ÁÍ+H÷Õ
+RINFOZ
+CODE_SMELL
+_squid:S1068
+"1Remove this unused "DEFAULT_WIDTH" private field.(‰æüêHøÕ
+RMAJORZ
+CODE_SMELL
+gsquid:S1854 "9Remove this useless assignment to local variable "input".(¬…ˆ8®—ÁÍ+HùÕ
+RMAJORZBUG
+esquid:S1068"2Remove this unused "DEFAULT_HEIGHT" private field.(š§üıÿÿÿÿHúÕ
+RMAJORZ
+CODE_SMELL

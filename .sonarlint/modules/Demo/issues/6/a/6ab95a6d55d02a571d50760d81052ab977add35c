@@ -1,0 +1,44 @@
+
+squid:S1149U"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(λΤόÿÿÿÿ8ζιωΝ+HϋΥ
+RMAJORZ
+CODE_SMELL
+]squid:S1481e")Remove this unused "qStr" local variable.(γ’ρ8ζιωΝ+HόΥ
+RMINORZ
+CODE_SMELL
+o
+squid:S106R";Replace this usage of System.out or System.err by a logger.(¬ε»ΰ8ζιωΝ+HύΥ
+RMAJORZ
+CODE_SMELL
+asquid:S1481[",Remove this unused "tabsGet" local variable.(ϊα‹ξ8ζιωΝ+HώΥ
+RMINORZ
+CODE_SMELL
+tsquid:S1118n":Add a private constructor to hide the implicit public one.(Ϊή•Ύÿÿÿÿÿ8ζιωΝ+HÿΥ
+RMAJORZ
+CODE_SMELL
+]squid:S1172t"(Remove this unused method parameter "a".(–Ϊ€ύ8ζιωΝ+H€Φ
+RMAJORZ
+CODE_SMELL
+msquid:S1118":Add a private constructor to hide the implicit public one.(Νχ€όÿÿÿÿHΦ
+RMAJORZ
+CODE_SMELL
+]squid:S1172p"(Remove this unused method parameter "a".(ωνΨ…8ζιωΝ+H‚Φ
+RMAJORZ
+CODE_SMELL
+m
+squid:S106!";Replace this usage of System.out or System.err by a logger.(½¦ÿÿÿÿÿHƒΦ
+RMAJORZ
+CODE_SMELL
+bsquid:S1172x"(Remove this unused method parameter "a".(΄ΙΟψÿÿÿÿ8ζιωΝ+H„Φ
+RMAJORZ
+CODE_SMELL
+isquid:S1854[";Remove this useless assignment to local variable "tabsGet".(ϊα‹ξ8ζιωΝ+H…Φ
+RMAJORZBUG
+esquid:S1854e"8Remove this useless assignment to local variable "qStr".(γ’ρ8ζιωΝ+H†Φ
+RMAJORZBUG
+squid:S2293e"YReplace the type specification in this constructor call with the diamond operator ("<>").(γ’ρ8ζιωΝ+H‡Φ
+RMINORZ
+CODE_SMELL
+t
+squid:S106A";Replace this usage of System.out or System.err by a logger.(ΡύΦύÿÿÿÿ8ζιωΝ+HΦ
+RMAJORZ
+CODE_SMELL

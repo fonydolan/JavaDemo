@@ -1,0 +1,7 @@
+
+¹squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ý¹¤©8—ñÜÿË+H´Ì
+RCRITICALZ
+CODE_SMELL
+ˆsquid:S2975"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(êöËéüÿÿÿÿH•Ì
+RBLOCKERZ
+CODE_SMELL

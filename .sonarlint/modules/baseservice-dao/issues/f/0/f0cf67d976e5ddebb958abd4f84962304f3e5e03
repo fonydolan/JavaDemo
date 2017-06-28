@@ -1,0 +1,106 @@
+
+usquid:S12267"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿHûÈ
+RMINORZ
+CODE_SMELL
+usquid:S1226H"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿHüÈ
+RMINORZ
+CODE_SMELL
+usquid:S1226i"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿHıÈ
+RMINORZ
+CODE_SMELL
+vsquid:S1226"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿHşÈ
+RMINORZ
+CODE_SMELL
+vsquid:S1226»"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿHÿÈ
+RMINORZ
+CODE_SMELL
+msquid:S1155‰">Use isEmpty() to check whether the collection is empty or not.(Ñ¶èÃH€É
+RMINORZ
+CODE_SMELL
+msquid:S1155ö">Use isEmpty() to check whether the collection is empty or not.(Ñ¶èÃHÉ
+RMINORZ
+CODE_SMELL
+msquid:S1155Ô">Use isEmpty() to check whether the collection is empty or not.(Ñ¶èÃH‚É
+RMINORZ
+CODE_SMELL
+vsquid:S1226ã"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿHƒÉ
+RMINORZ
+CODE_SMELL
+vsquid:S1226Í"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿH„É
+RMINORZ
+CODE_SMELL
+msquid:S1155š">Use isEmpty() to check whether the collection is empty or not.(Ñ¶èÃH…É
+RMINORZ
+CODE_SMELL
+}squid:S1192ë"KDefine a constant instead of duplicating this literal "$latColumn" 3 times.(¨Œİ¤H†É
+RCRITICALZ
+CODE_SMELL
+usquid:S1226("BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿH‡É
+RMINORZ
+CODE_SMELL
+vsquid:S1226½"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿHˆÉ
+RMINORZ
+CODE_SMELL
+vsquid:S1226‹"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿH‰É
+RMINORZ
+CODE_SMELL
+vsquid:S1226«"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿHŠÉ
+RMINORZ
+CODE_SMELL
+vsquid:S1226–"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿH‹É
+RMINORZ
+CODE_SMELL
+msquid:S1155²">Use isEmpty() to check whether the collection is empty or not.(Ñ¶èÃHŒÉ
+RMINORZ
+CODE_SMELL
+|squid:S1192ë"JDefine a constant instead of duplicating this literal "$latValue" 3 times.(¨Œİ¤HÉ
+RCRITICALZ
+CODE_SMELL
+vsquid:S1226œ"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿHÉ
+RMINORZ
+CODE_SMELL
+usquid:S1226|"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿHÉ
+RMINORZ
+CODE_SMELL
+}squid:S1192ì"KDefine a constant instead of duplicating this literal "$lngColumn" 3 times.(Ò³„éHÉ
+RCRITICALZ
+CODE_SMELL
+usquid:S1226W"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿH‘É
+RMINORZ
+CODE_SMELL
+vsquid:S1226ü"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿH’É
+RMINORZ
+CODE_SMELL
+msquid:S1155Ë">Use isEmpty() to check whether the collection is empty or not.(Ñ¶èÃH“É
+RMINORZ
+CODE_SMELL
+msquid:S1155©">Use isEmpty() to check whether the collection is empty or not.(Ñ¶èÃH”É
+RMINORZ
+CODE_SMELL
+|squid:S1192ì"JDefine a constant instead of duplicating this literal "$lngValue" 3 times.(Ò³„éH•É
+RCRITICALZ
+CODE_SMELL
+vsquid:S1226ù"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿH–É
+RMINORZ
+CODE_SMELL
+vsquid:S1226´"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿH—É
+RMINORZ
+CODE_SMELL
+vsquid:S1226³"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿH˜É
+RMINORZ
+CODE_SMELL
+vsquid:S1226Ö"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿH™É
+RMINORZ
+CODE_SMELL
+msquid:S1155»">Use isEmpty() to check whether the collection is empty or not.(Ñ¶èÃHšÉ
+RMINORZ
+CODE_SMELL
+msquid:S1155±">Use isEmpty() to check whether the collection is empty or not.(Ñ¶èÃH›É
+RMINORZ
+CODE_SMELL
+vsquid:S1226ø"BIntroduce a new variable instead of reusing the parameter "hints".(ßäÿÿÿÿÿÿHœÉ
+RMINORZ
+CODE_SMELL
+~squid:S1192ê"GDefine a constant instead of duplicating this literal " + 1) " 3 times.(Ò¸ÜïùÿÿÿÿHÉ
+RCRITICALZ
+CODE_SMELL

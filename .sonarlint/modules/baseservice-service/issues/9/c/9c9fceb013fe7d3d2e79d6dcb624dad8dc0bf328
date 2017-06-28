@@ -1,0 +1,15 @@
+
+“squid:S2293d"YReplace the type specification in this constructor call with the diamond operator ("<>").(®хрОюяяяя8РХц‘О+HЏЦ
+RMINORZ
+CODE_SMELL
+osquid:S1854&"<Remove this useless assignment to local variable "response".(›јЌЊьяяяя8РХц‘О+HђЦ
+RMAJORZBUG
+msquid:S18549":Remove this useless assignment to local variable "entity".(жуЮьяяяя8РХц‘О+H‘Ц
+RMAJORZBUG
+fsquid:S1854O"8Remove this useless assignment to local variable "item".(ы‹Чэ8РХц‘О+H’Ц
+RMAJORZBUG
+ksquid:S1854e"8Remove this useless assignment to local variable "item".(ы§Ќѕшяяяя8РХц‘О+H“Ц
+RMAJORZBUG
+rsquid:S1155c">Use isEmpty() to check whether the collection is empty or not.(ЏТ¤78РХц‘О+H”Ц
+RMINORZ
+CODE_SMELL
