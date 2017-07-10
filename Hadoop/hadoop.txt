@@ -1,0 +1,22 @@
+hadoop namenode -format 格式化
+start-all.sh 启动hadoop
+jps  价差是否启动进程
+
+hadoop fs -command 格式执行
+hadoop fs
+hadoop fs -help ls
+
+sudo wget  http://labfile.oss.aliyuncs.com/courses/832/weblog_entries.txt
+
+hadoop fs -mkdir  -p /data/weblogs 创建hdfs文件夹
+hadoop fs -lsr /data 列出目录
+hadoop fs -copyFromLocal weblog_entries.txt /data/weblogs 从本地拷入
+hadoop fs -ls /data/weblogs/weblog_entries.txt 列出文件内容
+hadoop fs -mkdir /data/weblogs/20160511 /data/weblogs/20160501
+hadoop fs -ls /data/weblogs
+
+
+cd /opt
+#网络可能慢点，需要耐心等待
+sudo wget http://mirrors.aliyun.com/apache/pig/pig-0.15.0/pig-0.15.0.tar.gz 
+sudo tar xvf  pig-0.15.0.tar.gz
