@@ -31,6 +31,8 @@ public class App
     public static void main( String[] args ) throws ClassNotFoundException, CloneNotSupportedException
     {
         System.out.println( "Hello World!" );
+        System.out.println( System.getProperty("user.dir"));
+        System.out.println( System.getProperties());
         /**
         GregorianCalendar today = new GregorianCalendar();
         GregorianCalendar deadline = new GregorianCalendar(2099,Calendar.DECEMBER,31);
