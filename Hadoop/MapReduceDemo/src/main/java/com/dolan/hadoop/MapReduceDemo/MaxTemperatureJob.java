@@ -26,7 +26,7 @@ public class MaxTemperatureJob {
 	    
 	    job.setMapperClass(MaxTemperatureMapper.class);
 	    job.setReducerClass(MaxTemperatureReducer.class);
-	    
+	    //设置 map reducer的输出类型 一般是相同的；如果不同 可以通过 setMapOutPutKeyClass()value,单独设置MAP
 	    job.setOutputKeyClass(Text.class);
 	    job.setOutputValueClass(IntWritable.class);
 	}
@@ -34,7 +34,8 @@ public class MaxTemperatureJob {
 	public boolean Process() throws ClassNotFoundException, IOException, InterruptedException
 	{
 		if(job!=null)
-		{	
+		{
+			//提交作业 并等待执行完成
 			return job.waitForCompletion(true);
 		}
 		return false;
