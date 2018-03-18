@@ -3,6 +3,7 @@ package com.dolan.study.demo;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;
 import java.lang.reflect.Proxy;
@@ -21,6 +22,7 @@ import javax.swing.*;
 import com.dolan.study.demo.events.TimerEvent;
 import com.dolan.study.demo.jframe.SimpleFrame;
 import com.dolan.study.demo.proxys.TraceHandler;
+import com.dolan.study.demo.streams.FileDemo;
 
 /**
  * Hello world!
@@ -31,6 +33,16 @@ public class App
     public static void main( String[] args ) throws ClassNotFoundException, CloneNotSupportedException
     {
         System.out.println( "Hello World!" );
+        System.out.println( System.getProperty("user.dir"));
+        System.out.println( System.getProperties());
+
+        FileDemo fileDemo = new FileDemo();
+        try {
+            fileDemo.go();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         /**
         GregorianCalendar today = new GregorianCalendar();
         GregorianCalendar deadline = new GregorianCalendar(2099,Calendar.DECEMBER,31);

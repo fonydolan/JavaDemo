@@ -1,6 +1,8 @@
 package com.dolan.study.demo;
 
-public class Person implements Cloneable {
+import java.io.Serializable;
+
+public class Person implements Cloneable,Serializable{
 
   public Person(){}
 
