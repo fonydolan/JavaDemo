@@ -3,12 +3,7 @@ package com.dolan.study.demo.base;
 import sun.nio.ch.ThreadPool;
 
 import java.io.File;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.*;
 
 /**
  * Created by fangqj on 2017/7/10.
@@ -57,6 +52,24 @@ public class ThreadDemo {
         pool.shutdown();
         int largestPoolSize = ((ThreadPoolExecutor)pool).getLargestPoolSize();
         System.out.println("largest pool size="+largestPoolSize);
+        //同步器
+        //允许线程等待直至其中预定数目的线程到达公共障栅barrier，然后选择一个处理障栅的动作
+        CyclicBarrier cyclicBarrier = new CyclicBarrier( 10);
+        //线程等待至计数器减为0
+        CountDownLatch countDownLatch = new CountDownLatch(100);
+        //允许两个线程在交换的对象准备好事交换对象
+        Exchanger exchanger;
+        //等待至线程被允许继续执行
+        Semaphore semaphore;
+        //允许线程将对象交给另一个
+        SynchronousQueue<Integer> synchronousQueue;
+
+        //信号量 一个管多个 许可证permits
+        //信号量 同步原语
+
+        //倒计时门栓CountDownLatch
+
+
     }
 
 
